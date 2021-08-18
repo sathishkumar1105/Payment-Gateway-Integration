@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Go Donate Me</title>
+	<script
+        src="https://kit.fontawesome.com/8fbd5a6d60.js" crossorgin="anonymous">
+  </script>
+	<style>
+	*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f8f8;
+    
+}
+nav{
+    height: 80px;
+    width: 100%;
+    
+}
+label.logo{
+   color: #02a459;
+   font-size: 2.3rem;
+   line-height: 80px;
+   padding: 0 10px;
+   font-weight: bold;
+   font-family: arial, sans-serif;
+   font-style: italic;
+   margin-right: -20px;
+}
+nav ul{
+    margin-top: -10px;
+    float: right;
+    
+}
+nav ul li{
+
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+     border: 2px solid #02a459;
+    color: black;
+    font-size: 1.1rem;
+   padding: 5px 8px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight:bold;
+    font-style: italic;
+    font-family: arial, sans-serif;
+
+}
+a:hover{
+   color: #02a459;
+   transition: .5s;
+
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 895px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f4f4f4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+       }
+       nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+          
+       }
+       nav ul li a{
+        font-size: 15px;
+
+       }
+       a:hover,1.active{
+        background: none;
+        color: #0082e6;
+       }
+       #check:checked ~ ul{
+        left: 0;
+       }
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #02a459;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+nav img{
+    width: 50px;
+    height: auto;
+    margin: 0;
+    float: left;
+    margin-top:13px;
+    margin-left: 100px;
+}
+
+   .create-user{
+      color: black;
+      height: 535.8px;
+      width: 400px;
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0.8;
+      text-align: center;
+    }
+    .create-user input[type="text"], .create-user input[type="email"]{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 20px auto;
+             text-align: center;
+             border: 2px solid #3498db;
+             padding: 14px 10px;
+             width: 200px;
+             outline: none;
+             color: black;
+             border-radius:24px;
+             transition: 0.25s;
+    }
+    .create-user input[type="text"]:focus, .create-user input[type="email"]:focus{
+            width: 280px;
+            border-color: 0.25s;
+            }
+    
+      .create-user .continue{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 20px auto;
+             text-align: center;
+             border: 2px solid #1db954;
+             padding: 14px 10px;
+             cursor: pointer;
+             outline: none;
+             color: black;
+             border-radius:24px;
+             transition: 0.25s;
+             width: 150px;
+             
+    }
+    .create-user .continue:hover{
+        background: #1db954;
+      }
+      
+      label{
+        font-weight: bold;
+        font-size: 1.1rem;
+
+      }
+      p{
+        opacity: 0.5;
+      }
+      .condition{
+            color: lightblue;
+      }
+      .condition:hover{
+        color: white;
+        transition: .5s;
+      }
+      .create-user img{
+        width: 80px;
+        height: 80px;
+        margin-top: -30px;
+      }
+      ::placeholder{
+        color: black;
+      }
+      h1{
+        margin-top: 10%;
+        opacity: .6;
+        font-size: 2rem;
+        font-family: arial, sans-serif;
+        margin-bottom: 10%;
+
+      }
+      .active{
+        background-color:#02a459 ;
+        color: white;
+      }
+</style>
+</head>
+<body>
+	 <header>
+    <nav>
+          <label class="logo">Go Donate Me</label>
+          <img class="icon12" src="Images/me.png">
+          <ul>
+             <li><a href="spark index.html">Home</a></li>
+             <li><a href="#" class="active">Donate</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="about.html">About</a></li>
+          </ul>
+    </nav>
+  </header>
+  <main>
+  	<form name="frmcontact "class="create-user" method="post" action="users.php">
+       <h1>Sign Up/Login In</h1>
+        <div class="container">
+          <label for="uname">Name</label>
+          <input  type="text" name="uname" placeholder="Enter a name"  required>
+        </div>
+
+        <div class="email">
+         <label for="email">Email</label>
+         <input type="email" name="email" placeholder="Enter a Email" required>
+        </div>
+       <a class="continue" href="paymentmode.html">Continue</a>
+    </form> 
+
+  </main>
+ 
+<footer class="foot">
+	    <p>&copy 2021 GoDonateMe &nbsp
+	      <i class="fab fa-twitter icon icon1"></i>&nbsp
+	      <i class="fab fa-facebook icon"></i>&nbsp
+	      <i class="fab fa-instagram icon icon2"></i>&nbsp
+	      <i class="fab fa-tumblr icon icon1"></i>&nbsp
+	      <i class="fab fa-google-plus-g icon"></i>&nbsp
+	      <i class="fab fa-behance icon icon2"></i>
+	    </p>
+   </footer>
+   
+</body>
+</html>

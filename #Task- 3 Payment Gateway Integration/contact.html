@@ -1,0 +1,243 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Go Donate Me</title>
+    <script
+        src="https://kit.fontawesome.com/8fbd5a6d60.js" crossorgin="anonymous">
+  </script>
+    <style type="text/css">
+       *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f8f8;
+    
+}
+nav{
+    height: 80px;
+    width: 100%;
+    
+}
+label.logo{
+   color: #02a459;
+   font-size: 2.3rem;
+   line-height: 80px;
+   padding: 0 10px;
+   font-weight: bold;
+   font-family: arial, sans-serif;
+   font-style: italic;
+   margin-right: -20px;
+}
+nav ul{
+    margin-top: -10px;
+    float: right;
+    
+}
+nav ul li{
+
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    border: 2px solid #02a459;
+    color: black;
+    font-size: 1.1rem;
+    padding: 5px 8px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight:bold;
+    font-style: italic;
+    font-family: arial, sans-serif;
+
+}
+a:hover{
+   color: #02a459;
+   transition: .5s;
+
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 895px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f4f4f4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+       }
+       nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+          
+       }
+       nav ul li a{
+        font-size: 15px;
+
+       }
+       a:hover,1.active{
+        background: none;
+        color: #0082e6;
+       }
+       #check:checked ~ ul{
+        left: 0;
+       }
+}
+        footer{
+            position: absolute;
+            bottom: 0;
+            background-color: #02a459;
+            width: 100%;
+            padding: 8px;
+            text-align: center;
+            font-size: 1rem;
+        }
+        nav img{
+            width: 50px;
+            height: auto;
+            margin: 0;
+            float: left;
+            margin-top:13px;
+            margin-left: 100px;
+        }
+    .contact{
+    margin-left: 28%;
+   }
+
+.contact > .headd{
+   font-style: italic;
+   text-align: center;
+   margin-right: 50%;
+   font-size: 2.2rem;
+   font-weight: bold;
+   font-family: arial,sans-serif;
+   opacity: 0.5;
+}
+
+.butt-22{
+   width: 42%;
+   height: 6%;
+   padding: 0px;
+   margin-left: 53px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 2px solid #1db954;
+
+}
+
+.butt-2{
+   width: 42%;
+   height: 15%;
+   padding: 0px;
+   margin-left: 53px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 2px solid #1db954;
+  
+}
+
+.cont{
+    margin-left: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: arial,sans-serif;
+    font-size: 1rem;
+
+}
+.continue{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 0 auto;
+             text-align: center;
+             border: 2px solid #1db954;
+             padding: 14px 10px;
+             cursor: pointer;
+             outline: none;
+             color: black;
+             border-radius:24px;
+             transition: 0.25s;
+             width: 150px;
+             margin-left: 190px;
+             
+    }
+    .continue:hover{
+        background: #1db954;
+        color: black;
+         transition: .5s;
+      }
+      .active{
+        background-color: #1db954;
+        color: white;
+      }
+
+</style>
+</head>
+<body>
+    <header>
+    <nav>
+          
+          <label class="logo">Go Donate Me</label>
+          <img class="icon12" src="Images/me.png">
+          <ul>
+             <li><a href="Go donate me home.html">Home</a></li>
+             <li><a href="signup.html" >Donate</a></li>
+             <li><a href="#" class="active">Contact</a></li>
+             <li><a href="about.html">About</a></li>
+          </ul>
+    </nav>
+  </header>
+<main>
+    <div class="contact" id="contact">
+        
+        <h1 class="headd">Contact</h1>
+        <label class="cont">NAME</label><br>
+        <input type="text" placeholder="  Ex:John Smith" class="butt-22"><br>
+        <label class="cont">EMAIL ADDRESS</label><br>
+        <input type="text" placeholder="  abc@example.com" class="butt-22"><br>
+        <label class="cont">SUBJECT</label><br>
+        <input type="text"  class="butt-22"><br>
+        <label class="cont">MESSAGE</label><br>
+        <textarea id="textt" name="textt" rows="4" cols="50" class="butt-2"></textarea><br><br>
+        <button onclick="goBack()" class="continue">Send</a>
+</div>
+</main>
+ <footer class="foot">
+    <p>&copy 2021 GoDonateMe &nbsp
+      <i class="fab fa-twitter icon icon1"></i>&nbsp
+      <i class="fab fa-facebook icon"></i>&nbsp
+      <i class="fab fa-instagram icon icon2"></i>&nbsp
+      <i class="fab fa-tumblr icon icon1"></i>&nbsp
+      <i class="fab fa-google-plus-g icon"></i>&nbsp
+      <i class="fab fa-behance icon icon2"></i>
+    </p>
+</footer>
+<script type="text/javascript">
+    function goBack() {
+        alert("Thank you, Your response have been received");
+    }
+</script>
+</body>
+</html>

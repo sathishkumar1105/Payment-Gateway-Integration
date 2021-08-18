@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Go Donate Me</title>
+    <script
+        src="https://kit.fontawesome.com/8fbd5a6d60.js" crossorgin="anonymous">
+  </script>
+	<style type="text/css">
+		h1 > span{
+			font-size: 1rem;
+			font-weight: normal;
+			opacity: 0.5;
+			text-align: center;
+
+		}
+		h1{
+			font-family: arial,sans-serif;
+			opacity: 0.7;
+			font-style: italic;
+			text-align: center;
+		}
+		.img1{
+			margin: 0;
+			width: 150px;
+			height: 90px;
+		    padding: 20px;
+		    border: 2px solid black;
+
+		}
+		.img2{
+			margin: 0;
+			width: 150px;
+			height: 90px;
+			padding: 20px;
+			border: 2px solid black;
+		}
+		.img3{
+			margin: 0;
+			width: 150px;
+			height: 90px;
+			padding: 20px;
+			border: 2px solid black;
+		}
+		.img1:hover{
+			border: 2px solid #4c78d9;
+			transition: .1s;
+		}
+		.img2:hover{
+			border: 2px solid #4c78d9;
+			transition: .1s;
+		}
+		.img3:hover{
+			border: 2px solid #4c78d9;
+			transition: .1s;
+		}
+         div{
+         	margin-bottom: 3%;
+         	padding: 0px 30px;
+         }
+         .main{
+         	margin-left: 25%;
+         	display: flex;
+
+
+         }
+         *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f8f8;
+    
+}
+nav{
+    height: 80px;
+    width: 100%;
+    
+}
+label.logo{
+   color: #02a459;
+   font-size: 2.3rem;
+   line-height: 80px;
+   padding: 0 10px;
+   font-weight: bold;
+   font-family: arial, sans-serif;
+   font-style: italic;
+   margin-right: -20px;
+}
+nav ul{
+	margin-top: -10px;
+    float: right;
+    
+}
+nav ul li{
+
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    border: 2px solid #02a459;
+    color: black;
+    font-size: 1.1rem;
+    padding: 5px 8px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight:bold;
+    font-style: italic;
+    font-family: arial, sans-serif;
+
+}
+a:hover{
+   color: #02a459;
+   transition: .5s;
+
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 895px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f4f4f4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+       }
+       nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+          
+       }
+       nav ul li a{
+        font-size: 15px;
+
+       }
+       a:hover,1.active{
+        background: none;
+        color: #0082e6;
+       }
+       #check:checked ~ ul{
+        left: 0;
+       }
+}
+		footer{
+			position: absolute;
+			bottom: 0;
+			background-color: #02a459;
+			width: 100%;
+			padding: 8px;
+			text-align: center;
+			font-size: 1rem;
+		}
+		nav img{
+			width: 50px;
+			height: auto;
+			margin: 0;
+			float: left;
+		    margin-top:13px;
+		    margin-left: 100px;
+		}
+        main{
+        	margin-top: 5%;
+        }
+        .continue-but{
+             border: 0;
+             background: none;
+             display: block;
+             margin: 20px auto;
+             text-align: center;
+             border: 2px solid #1db954;
+             padding: 14px 10px;
+             cursor: pointer;
+             outline: none;
+             color: black;
+             border-radius:24px;
+             transition: 0.25s;
+             width: 150px;
+
+             
+    }
+    .continue-but:hover{
+    	color: black;
+        background: #1db954;
+         transition: .5s;
+      }
+     .active{
+        background-color:#02a459 ;
+        color: white;
+      }
+	</style>
+</head>
+<body>
+	<header>
+    <nav>
+          
+          <label class="logo">Go Donate Me</label>
+          <img class="icon12" src="Images/me.png">
+          <ul>
+             <li><a href="Go donate me home.html">Home</a></li>
+             <li><a href="signup.html" class="active">Donate</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="about.html">About</a></li>
+          </ul>
+    </nav>
+  </header>
+  <main>
+   <h1>Payment Method <span>Choose your best payment method</span></h1><br><br>
+   <div class="main">
+
+   <div>
+     <img class="img1" src="Images/download.png">
+     <p><input type="radio" name="mode"></p>
+   </div>
+   <div>
+     <img class="img2" src="Images/paypal.png">
+     <p><input type="radio" name="mode"> </p>
+   </div>
+   <div>
+    <img class="img3" src="Images/bitcoin.jpeg">
+    <p><input type="radio" name="mode"></p>
+   </div>
+
+</div>
+</main>
+<a href="paymentdetails.html" class="continue-but">Continue</a>
+<footer class="foot">
+	    <p>&copy 2021 GoDonateMe &nbsp
+	      <i class="fab fa-twitter icon icon1"></i>&nbsp
+	      <i class="fab fa-facebook icon"></i>&nbsp
+	      <i class="fab fa-instagram icon icon2"></i>&nbsp
+	      <i class="fab fa-tumblr icon icon1"></i>&nbsp
+	      <i class="fab fa-google-plus-g icon"></i>&nbsp
+	      <i class="fab fa-behance icon icon2"></i>
+	    </p>
+   </footer>
+</body>
+</html>

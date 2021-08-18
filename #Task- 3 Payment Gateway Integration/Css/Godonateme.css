@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f8f8;
+    
+}
+nav{
+    height: 80px;
+    width: 100%;
+    
+}
+label.logo{
+   color: #02a459;
+   font-size: 2.3rem;
+   line-height: 80px;
+   padding: 0 10px;
+   font-weight: bold;
+   font-family: arial, sans-serif;
+   font-style: italic;
+   margin-right: -20px;
+}
+nav ul{
+	margin-top: -10px;
+    float: right;
+    
+}
+nav ul li{
+
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    border: 2px solid #02a459;
+    color: black;
+    font-size: 1.1rem;
+    padding: 5px 8px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight:bold;
+    font-style: italic;
+    font-family: arial, sans-serif;
+
+}
+a:hover{
+   color: #02a459;
+   transition: .5s;
+
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 895px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f4f4f4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+       }
+       nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+          
+       }
+       nav ul li a{
+        font-size: 15px;
+
+       }
+       a:hover,1.active{
+        background: none;
+        color: #0082e6;
+       }
+       #check:checked ~ ul{
+        left: 0;
+       }
+}
+.content > .contentpara{
+	font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    
+
+}
+.content{
+    margin-top: 80px;
+    margin-left: 95px;
+    
+}
+.content > .sub-content{
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+.content > #main-img{
+    width: 45%;
+    height: auto;
+   float: right;
+   margin-right: 40px;
+   margin-top: -22%;
+   max-width: 50%;
+}
+.donate{
+	padding: 12px 20px;
+	text-decoration: none;
+	background-color: #02a459;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	font-family: arial, sans-serif;
+	font-size: 1.1rem;
+	font-style: oblique;
+}
+.donate:hover{
+	background-color: #02a459;
+	color: black;
+	 transition: .5s;
+}
+
+@media (max-width: 900px){
+    img{
+        
+        width: 30%;
+        height: 20%;
+    }
+    .content > .sub-content{
+        
+        font-size: 1.2rem;
+    }
+    .content > .deep{
+        width: 70%;
+        height: auto;
+        font-size: 1rem;
+    }
+    .content > input{
+        width: 60%;
+    }
+}
+@media (max-width: 410px){
+    img{
+        margin-top: 5px;
+        width: 50%;
+        height: 30%;
+        margin-right: 40%;
+    }
+    .content > .sub-content{
+         margin-bottom: 20%;
+        font-size: .8rem;
+    }
+    .content > .deep{
+        width: 70%;
+        height: auto;
+        font-size: .7rem;
+    }
+    .content > input{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .content > .contentpara{
+        font-size: 1rem;
+        margin-right: -20%;
+    }
+    label.logo{
+        margin-bottom: 50%;
+       font-size: 1rem;
+    }
+    .content > .start{
+        margin-top: 20px;
+    }
+    .foot{
+      margin-bottom: 0;
+    }
+
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	background-color: #02a459;
+	width: 100%;
+	padding: 8px;
+	text-align: center;
+	font-size: 1rem;
+}
+nav img{
+	width: 50px;
+	height: auto;
+	margin: 0;
+	float: left;
+    margin-top:13px;
+    margin-left: 100px;
+}
+
